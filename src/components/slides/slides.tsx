@@ -606,7 +606,7 @@ export function Slide12() {
 export function Slide13() {
   const cards = [
     {
-      tag: "MANDATÓRIO",
+      tag: "BASE",
       title: "CORE",
       price: "R$ 170k",
       items: ["36 ativações (12×3)", "Banner, Push, Pop-up", "Métricas base"],
