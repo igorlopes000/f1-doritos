@@ -391,7 +391,20 @@ export function Slide09() {
     { k: "TENSÃO", t: "T-120m", c: "Push / Pop-up" },
     { k: "LIVE", t: "Sinal Verde · T0", c: "Checkout / QR" },
   ];
-  const races = ["HUN", "BEL", "NED", "ITA", "AZE", "SGP", "USA", "MEX", "BRA"];
+  const races = [
+    { code: "HUN", flag: "🇭🇺", date: "24-26 JUL" },
+    { code: "NED", flag: "🇳🇱", date: "21-23 AGO" },
+    { code: "ITA", flag: "🇮🇹", date: "04-06 SET" },
+    { code: "ESP", flag: "🇪🇸", date: "11-13 SET" },
+    { code: "AZE", flag: "🇦🇿", date: "24-26 SET" },
+    { code: "SGP", flag: "🇸🇬", date: "09-11 OUT" },
+    { code: "USA", flag: "🇺🇸", date: "23-25 OUT" },
+    { code: "MEX", flag: "🇲🇽", date: "30 OUT-01 NOV" },
+    { code: "BRA", flag: "🇧🇷", date: "06-08 NOV" },
+    { code: "LVG", flag: "🇺🇸", date: "19-22 NOV" },
+    { code: "QAT", flag: "🇶🇦", date: "27-29 NOV" },
+    { code: "ABU", flag: "🇦🇪", date: "04-06 DEZ" },
+  ];
   return (
     <SlideShell>
       <SlideHeader index={9} total={TOTAL} label="ARQUITETURA OPERACIONAL" />
