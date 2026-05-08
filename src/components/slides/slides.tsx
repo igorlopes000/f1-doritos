@@ -597,8 +597,8 @@ export function Slide12() {
           <Gauge className="text-primary" size={28} />
           <div className="text-sm text-foreground/80">
             <span className="font-bold text-primary">Variação de Hábito</span> · Indicadores comerciais da ação vs.
-            período anterior · <span className="font-bold text-primary">Mapeamento Hotsite</span> · Direcionamentos via
-            Telas + Banner Checkout.
+            período anterior · <span className="font-bold text-primary">Mapeamento Hotsite</span> · Leads via QR +
+            Banner Checkout.
           </div>
         </motion.div>
       </div>
