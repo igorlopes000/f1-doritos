@@ -571,6 +571,25 @@ export function Slide12() {
           Camadas de validação: grupo tratado vs. grupo controle.
         </motion.p>
 
+        <div className="mt-12 grid flex-1 grid-cols-4 gap-6">
+          {metrics.map((m, i) => {
+            const Icon = m.icon;
+            return (
+              <motion.div
+                key={m.k}
+                {...stagger(i + 2)}
+                className="flex flex-col justify-between rounded-lg border border-primary/30 bg-card/40 p-6 backdrop-blur-sm"
+              >
+                <Icon className="text-primary" size={32} />
+                <div>
+                  <div className="font-display text-3xl font-black text-primary">{m.k}</div>
+                  <div className="mt-2 text-sm text-muted-foreground">{m.v}</div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
         <motion.div
           {...stagger(6)}
           className="mt-10 flex items-center gap-4 rounded border-l-2 border-primary bg-card/40 p-5"
@@ -693,6 +712,16 @@ export function Slide15() {
         <motion.p {...stagger(2)} className="mt-8 max-w-3xl text-2xl font-light text-foreground/90">
           Prepare seu paladar. Em todas as corridas, Doritos é Pole Position, velocidade em cada bite.
         </motion.p>
+        <motion.div
+          {...stagger(3)}
+          className="mt-14 flex items-center gap-6 border-t border-primary/40 pt-6 text-xs uppercase tracking-[0.3em] text-muted-foreground"
+        >
+          <Trophy className="text-primary" size={20} />
+          <span>Aprovação Diretoria · Trade & Marketing</span>
+          <span className="ml-auto flex items-center gap-2 text-primary">
+            Próximos Passos <ArrowRight size={14} />
+          </span>
+        </motion.div>
       </div>
     </SlideShell>
   );
