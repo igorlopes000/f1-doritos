@@ -595,7 +595,7 @@ export function Slide12() {
           className="mt-10 flex items-center gap-4 rounded border-l-2 border-primary bg-card/40 p-5"
         >
           <Gauge className="text-primary" size={28} />
-          <div className="text-sm text-foreground/80"></div>
+          <div className="text-sm text-foreground/80"> Leads a partir de Telas e Banner Checkout</div>
         </motion.div>
       </div>
     </SlideShell>
