@@ -704,10 +704,10 @@ export function Slide15() {
       <div className="flex h-[calc(100%-7rem)] flex-col justify-end px-16 pb-20">
         <motion.div {...stagger(0)} className="flex items-center gap-3">
           <Flag className="text-primary" size={28} />
-          <span className="text-xs font-bold uppercase tracking-[0.4em] text-primary">POLE POSITION</span>
+          <span className="text-xs font-bold uppercase tracking-[0.4em] text-primary"></span>
         </motion.div>
         <motion.h2 {...stagger(1)} className="mt-6 max-w-5xl font-display text-6xl font-black leading-[0.9]">
-          Em todas as corridas,<span className="text-primary text-glow">Doritos é Pole Position</span>.
+          Em todas as corridas,<span className="text-primary text-glow"> Doritos é Pole Position</span>
         </motion.h2>
       </div>
     </SlideShell>
