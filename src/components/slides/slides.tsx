@@ -580,6 +580,7 @@ export function Slide12() {
                 {...stagger(i + 2)}
                 className="flex flex-col justify-between rounded-lg border border-primary/30 bg-card/40 p-6 backdrop-blur-sm"
               >
+                <Icon className="text-primary" size={32} />
                 <div>
                   <div className="font-display text-3xl font-black text-primary">{m.k}</div>
                   <div className="mt-2 text-sm text-muted-foreground">{m.v}</div>
@@ -605,7 +606,7 @@ export function Slide12() {
 export function Slide13() {
   const cards = [
     {
-      tag: "BASE",
+      tag: "MANDATÓRIO",
       title: "CORE",
       price: "R$ 170k",
       items: ["36 ativações (12×3)", "Banner, Push, Pop-up", "Métricas base"],
