@@ -616,15 +616,15 @@ export function Slide13() {
     },
     {
       tag: "OPCIONAL",
-      title: "Módulo 1 <br /> · GP Brasil",
+      title: "Módulo 1 · GP Brasil",
       price: "+ R$ 50k",
       items: ["Expansão para 6 mídias", "Densidade máxima", "Intensificação GP Brasil"],
     },
     {
       tag: "OPCIONAL",
-      title: "Módulo 2 <br />· Telas + Checkout",
+      title: "Módulo 2 · Telas + Checkout",
       price: "+ R$ 30k",
-      items: ["Telas + Checkout", "Hotsite dedicado", "Captura + remarketing"],
+      items: ["Telas + Checkout", "Hotsite dedicado", "Pesquisa Brand Lift"],
     },
   ];
   return (
