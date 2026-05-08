@@ -436,7 +436,7 @@ export function Slide09() {
           </div>
 
           <div className="mt-10 text-xs font-bold uppercase tracking-[0.3em] text-primary">
-            MACRO · 12 GPs · JUL → NOV
+            MACRO · 12 GPs · JUL → DEZ
           </div>
           <motion.div {...stagger(6)} className="mt-4 grid grid-cols-12 gap-2">
             {races.map((r) => {
