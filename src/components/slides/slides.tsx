@@ -53,7 +53,7 @@ export function Slide01() {
           {...stagger(2)}
           className="mt-8 max-w-2xl text-xl font-light text-muted-foreground md:text-2xl subtitle"
         >
-          Pise fundo na adrenalina, Velocidade em cada bite.
+          Pise fundo na adrenalina, Velocidade em cada bite
         </motion.p>
         <motion.div
           {...stagger(3)}
