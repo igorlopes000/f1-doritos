@@ -66,7 +66,7 @@ export function Slide01() {
           <div className="h-8 w-px bg-border" />
           <div>
             <div className="text-primary">36</div>
-            <div>ATIVAÇÕES</div>
+            <div>ATIVAÇÕES </div>
           </div>
           <div className="h-8 w-px bg-border" />
           <div>
