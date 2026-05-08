@@ -61,7 +61,7 @@ export function Slide01() {
         >
           <div>
             <div className="text-primary">12</div>
-            <div>CORRIDAS </div>
+            <div>CORRIDAS</div>
           </div>
           <div className="h-8 w-px bg-border" />
           <div>
