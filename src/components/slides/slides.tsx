@@ -571,7 +571,10 @@ export function Slide12() {
           Camadas de validação: grupo tratado vs. grupo controle.
         </motion.p>
 
-        <div
+        <div className="mt-12 grid flex-1 grid-cols-4 gap-6">
+          {metrics.map((m, i) => {
+            const Icon = m.icon;
+            return (
               <motion.div
                 key={m.k}
                 {...stagger(i + 2)}
