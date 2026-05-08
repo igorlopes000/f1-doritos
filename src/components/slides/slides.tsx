@@ -613,20 +613,20 @@ export function Slide13() {
       tag: "MANDATÓRIO",
       title: "CORE",
       price: "R$ 170k",
-      items: ["36 ativações (12×3)", "Banner, Push, Pop-up, Checkout", "Sincronização UTC-3", "Métricas base"],
+      items: ["36 ativações (12×3)", "Banner, Push, Pop-up", "Sincronização UTC-3", "Métricas base"],
       featured: true,
     },
     {
       tag: "OPCIONAL",
-      title: "OPT A · GP Brasil",
+      title: "Módulo 1 · GP Brasil",
       price: "+ R$ 50k",
       items: ["Expansão para 6 mídias", "Densidade máxima", "Intensificação GP Brasil"],
     },
     {
       tag: "OPCIONAL",
-      title: "OPT B · QR + Hotsite",
+      title: "Módulo 2 · Mídias de Direcionamento Externo",
       price: "+ R$ 30k",
-      items: ["Telas in-store com QR", "Hotsite dedicado", "Captura + remarketing"],
+      items: ["Telas + Checkout", "Hotsite dedicado", "Captura + remarketing"],
     },
   ];
   return (
