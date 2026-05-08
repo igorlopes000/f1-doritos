@@ -389,7 +389,7 @@ export function Slide09() {
   const sessions = [
     { k: "PREPARAÇÃO", t: "Dia do Evento", c: "Banner Home / E-MKT (1x GP)" },
     { k: "TENSÃO", t: "T-120m", c: "Banner / Pop-Up" },
-    { k: "LIVE", t: "Sinal Verde · T0", c: "Push / Banneer/ Pop-Up" },
+    { k: "LIVE", t: "Sinal Verde · T0", c: "Push / Banner/ Pop-Up" },
   ];
   const races = [
     { code: "HUN", flag: "🇭🇺", date: "24-26 JUL" },
