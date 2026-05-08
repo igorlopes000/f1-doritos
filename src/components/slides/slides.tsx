@@ -557,7 +557,7 @@ export function Slide12() {
   const metrics = [
     { k: "CTR", v: "Relevância Contextual", icon: Activity },
     { k: "GMV", v: "Faturamento Total", icon: BarChart3 },
-    { k: "BRAND LIFT", v: "Recall + Intenção", icon: Sparkles },
+    { k: "VARIAÇÃO DE HÁBITO", v: "Comportamento do Consumidor", icon: Sparkles },
     { k: "LEADS", v: "Audiência Engajada", icon: Target },
   ];
   return (
