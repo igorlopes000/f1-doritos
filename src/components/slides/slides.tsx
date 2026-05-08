@@ -582,8 +582,6 @@ export function Slide12() {
               >
                 <Icon className="text-primary" size={32} />
                 <div>
-                  {" "}
-                  Leads direcionados a partir de Telas e Checkout
                   <div className="font-display text-3xl font-black text-primary">{m.k}</div>
                   <div className="mt-2 text-sm text-muted-foreground">{m.v}</div>
                 </div>
