@@ -31,7 +31,7 @@ const stagger = (i: number) => ({
   transition: { duration: 0.7, delay: 0.15 + i * 0.12, ease: [0.22, 1, 0.36, 1] as const },
 });
 
-export const TOTAL = 16;
+export const TOTAL = 13;
 
 /* ---------- 01 CAPA ---------- */
 export function Slide01() {
@@ -742,11 +742,8 @@ export const SLIDES = [
   Slide08,
   SlideGatilhos,
   Slide09,
-  Slide10,
-  Slide11,
   Slide12,
   Slide13,
-  Slide14,
   Slide15,
 ];
 
