@@ -387,7 +387,7 @@ export function Slide08() {
 /* ---------- 09 ARQUITETURA OPERACIONAL ---------- */
 export function Slide09() {
   const sessions = [
-    { k: "PREPARAÇÃO", t: "Dia do Evento", c: "Banner Home / E-mkt" },
+    { k: "PREPARAÇÃO", t: "Dia do Evento", c: "Banner Home / Pop-UP / E-mkt (Apenas 1x}",
     { k: "TENSÃO", t: "T-120m", c: "Push / Pop-up" },
     { k: "LIVE", t: "Sinal Verde · T0", c: "Checkout / QR" },
   ];
