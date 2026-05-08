@@ -580,7 +580,6 @@ export function Slide12() {
                 {...stagger(i + 2)}
                 className="flex flex-col justify-between rounded-lg border border-primary/30 bg-card/40 p-6 backdrop-blur-sm"
               >
-                <Icon className="text-primary" size={32} />
                 <div>
                   <div className="font-display text-3xl font-black text-primary">{m.k}</div>
                   <div className="mt-2 text-sm text-muted-foreground">{m.v}</div>
