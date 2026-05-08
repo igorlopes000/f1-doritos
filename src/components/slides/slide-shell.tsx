@@ -34,7 +34,7 @@ export function SlideHeader({ index, total, label }: { index: number; total: num
       <div className="flex items-center gap-4">
         <span className="font-display font-black text-primary">DORITOS</span>
         <span className="text-border">×</span>
-        <span className="font-display">F1 2025</span>
+        <span className="font-display">F1 2026</span>
       </div>
       <div className="flex items-center gap-3 font-mono">
         <span className="text-primary">{String(index).padStart(2, "0")}</span>
