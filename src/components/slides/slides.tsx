@@ -571,25 +571,6 @@ export function Slide12() {
           Camadas de validação: grupo tratado vs. grupo controle.
         </motion.p>
 
-        <div className="mt-12 grid flex-1 grid-cols-4 gap-6">
-          {metrics.map((m, i) => {
-            const Icon = m.icon;
-            return (
-              <motion.div
-                key={m.k}
-                {...stagger(i + 2)}
-                className="flex flex-col justify-between rounded-lg border border-primary/30 bg-card/40 p-6 backdrop-blur-sm"
-              >
-                <Icon className="text-primary" size={32} />
-                <div>
-                  <div className="font-display text-3xl font-black text-primary">{m.k}</div>
-                  <div className="mt-2 text-sm text-muted-foreground">{m.v}</div>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-
         <motion.div
           {...stagger(6)}
           className="mt-10 flex items-center gap-4 rounded border-l-2 border-primary bg-card/40 p-5"
