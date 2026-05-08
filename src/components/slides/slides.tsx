@@ -693,16 +693,6 @@ export function Slide15() {
         <motion.p {...stagger(2)} className="mt-8 max-w-3xl text-2xl font-light text-foreground/90">
           Prepare seu paladar. Em todas as corridas, Doritos é Pole Position, velocidade em cada bite.
         </motion.p>
-        <motion.div
-          {...stagger(3)}
-          className="mt-14 flex items-center gap-6 border-t border-primary/40 pt-6 text-xs uppercase tracking-[0.3em] text-muted-foreground"
-        >
-          <Trophy className="text-primary" size={20} />
-          <span>Aprovação Diretoria · Trade & Marketing</span>
-          <span className="ml-auto flex items-center gap-2 text-primary">
-            Próximos Passos <ArrowRight size={14} />
-          </span>
-        </motion.div>
       </div>
     </SlideShell>
   );
