@@ -279,7 +279,7 @@ export function Slide06() {
 export function Slide07() {
   return (
     <SlideShell
-      bgImage={f1Living}
+      bgImage={speedAbstract}
       overlay="linear-gradient(270deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.3) 100%)"
     >
       <SlideHeader index={7} total={TOTAL} label="CONCEITO 02" />
