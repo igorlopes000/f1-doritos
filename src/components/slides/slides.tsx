@@ -595,11 +595,7 @@ export function Slide12() {
           className="mt-10 flex items-center gap-4 rounded border-l-2 border-primary bg-card/40 p-5"
         >
           <Gauge className="text-primary" size={28} />
-          <div className="text-sm text-foreground/80">
-            <span className="font-bold text-primary">Variação de Hábito</span> · Indicadores comerciais da ação vs.
-            período anterior · <span className="font-bold text-primary">Mapeamento Hotsite</span> · Leads via QR +
-            Banner Checkout.
-          </div>
+          <div className="text-sm text-foreground/80"></div>
         </motion.div>
       </div>
     </SlideShell>
@@ -618,13 +614,13 @@ export function Slide13() {
     },
     {
       tag: "OPCIONAL",
-      title: "Módulo 1 · GP Brasil",
+      title: "Módulo 1 <br /> · GP Brasil",
       price: "+ R$ 50k",
       items: ["Expansão para 6 mídias", "Densidade máxima", "Intensificação GP Brasil"],
     },
     {
       tag: "OPCIONAL",
-      title: "Módulo 2 · Telas + Checkout",
+      title: "Módulo 2 <br />· Telas + Checkout",
       price: "+ R$ 30k",
       items: ["Telas + Checkout", "Hotsite dedicado", "Captura + remarketing"],
     },
