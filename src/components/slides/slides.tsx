@@ -303,35 +303,82 @@ export function Slide07() {
 
 /* ---------- 08 CONCEITO 3 ---------- */
 export function Slide08() {
+  const dims = [
+    { k: "01", t: "Gatilho Cultural" },
+    { k: "02", t: "Consumo Real" },
+    { k: "03", t: "Recorrência Diária" },
+  ];
   return (
     <SlideShell
       bgImage={speedAbstract}
-      overlay="linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.95) 100%)"
+      overlay="linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.95) 100%)"
     >
       <SlideHeader index={8} total={TOTAL} label="CONCEITO 03" />
-      <div className="flex h-[calc(100%-7rem)] flex-col justify-center px-16 pb-16">
-        <motion.div {...stagger(0)} className="flex items-center gap-4 text-primary">
-          <Layers size={20} />
-          <span className="text-xs font-bold uppercase tracking-[0.4em]">CONCEITO 03 · ECOSSISTEMA</span>
-        </motion.div>
-        <motion.h2 {...stagger(1)} className="mt-6 font-display text-6xl font-black leading-[0.9]">
-          Smart Stacking <span className="text-primary text-glow">F1</span>
-        </motion.h2>
-        <motion.p {...stagger(2)} className="mt-10 max-w-3xl text-2xl font-light leading-snug text-foreground/90">
-          Sobreposição de gatilho cultural e consumo real. A comunicação constante ao longo do período estrutura o
-          hábito automático.
-        </motion.p>
-        <motion.div {...stagger(3)} className="mt-16 grid max-w-4xl grid-cols-3 gap-6">
-          {["Gatilho Cultural", "Consumo Real", "Recorrência Diária"].map((x, i) => (
-            <div key={x} className="rounded border border-primary/40 bg-card/40 p-4 backdrop-blur-sm">
-              <div className="font-mono text-xs text-primary">0{i + 1}</div>
-              <div className="mt-2 font-display font-bold">{x}</div>
+      <div className="grid h-[calc(100%-7rem)] grid-cols-12 gap-8 px-16 pb-16">
+        {/* LEFT: copy */}
+        <div className="col-span-7 flex flex-col justify-center">
+          <motion.div {...stagger(0)} className="flex items-center gap-4 text-primary">
+            <Layers size={20} />
+            <span className="text-xs font-bold uppercase tracking-[0.4em]">CONCEITO 03 · ECOSSISTEMA</span>
+          </motion.div>
+          <motion.h2 {...stagger(1)} className="mt-6 font-display text-6xl font-black leading-[0.9]">
+            Smart Stacking <span className="text-primary text-glow">F1</span>
+          </motion.h2>
+          <motion.p {...stagger(2)} className="mt-8 max-w-xl text-xl font-light leading-snug text-foreground/90">
+            Sobreposição de gatilho cultural e consumo real. A comunicação constante ao longo do período estrutura o
+            hábito automático.
+          </motion.p>
+          <motion.div {...stagger(3)} className="mt-8 flex flex-col gap-2">
+            {dims.map((d) => (
+              <div key={d.k} className="flex items-center gap-3 text-sm">
+                <span className="font-mono text-xs text-primary">{d.k}</span>
+                <span className="font-display font-bold">{d.t}</span>
+              </div>
+            ))}
+          </motion.div>
+          <motion.div {...stagger(6)} className="mt-10 text-xs italic uppercase tracking-[0.3em] text-muted-foreground">
+            O consumidor não pensa, reage.
+          </motion.div>
+        </div>
+
+        {/* RIGHT: Venn diagram */}
+        <div className="col-span-5 flex items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="relative h-[460px] w-[460px]"
+          >
+            {/* circle 1 - top */}
+            <div className="absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 rounded-full border-2 border-primary bg-primary/15 mix-blend-screen" />
+            {/* circle 2 - bottom-left */}
+            <div className="absolute bottom-0 left-0 h-64 w-64 rounded-full border-2 border-primary bg-primary/15 mix-blend-screen" />
+            {/* circle 3 - bottom-right */}
+            <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full border-2 border-primary bg-primary/15 mix-blend-screen" />
+
+            {/* labels outside */}
+            <div className="absolute -top-2 left-1/2 -translate-x-1/2 -translate-y-full whitespace-nowrap text-center">
+              <div className="font-mono text-[10px] text-primary">01</div>
+              <div className="font-display text-sm font-black">Gatilho Cultural</div>
             </div>
-          ))}
-        </motion.div>
-        <motion.div {...stagger(6)} className="mt-12 text-xs italic uppercase tracking-[0.3em] text-muted-foreground">
-          O consumidor não pensa, reage.
-        </motion.div>
+            <div className="absolute -bottom-2 left-0 -translate-x-4 translate-y-full text-center">
+              <div className="font-mono text-[10px] text-primary">02</div>
+              <div className="font-display text-sm font-black">Consumo Real</div>
+            </div>
+            <div className="absolute -bottom-2 right-0 translate-x-4 translate-y-full text-center">
+              <div className="font-mono text-[10px] text-primary">03</div>
+              <div className="font-display text-sm font-black">Recorrência Diária</div>
+            </div>
+
+            {/* center: STACKING */}
+            <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center">
+              <div className="rounded-full bg-primary px-5 py-2 font-display text-base font-black text-primary-foreground shadow-[0_0_40px_rgba(255,165,0,0.6)]">
+                STACKING
+              </div>
+              <div className="mt-2 font-mono text-[10px] uppercase tracking-[0.3em] text-primary">Sobreposição</div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </SlideShell>
   );
