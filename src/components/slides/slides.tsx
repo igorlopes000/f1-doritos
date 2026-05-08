@@ -613,7 +613,7 @@ export function Slide13() {
       tag: "MANDATÓRIO",
       title: "CORE",
       price: "R$ 170k",
-      items: ["36 ativações (12×3)", "Banner, Push, Pop-up", "Sincronização UTC-3", "Métricas base"],
+      items: ["36 ativações (12×3)", "Banner, Push, Pop-up", "Métricas base"],
       featured: true,
     },
     {
@@ -624,7 +624,7 @@ export function Slide13() {
     },
     {
       tag: "OPCIONAL",
-      title: "Módulo 2 · Mídias de Direcionamento Externo",
+      title: "Módulo 2 · Telas + Checkout",
       price: "+ R$ 30k",
       items: ["Telas + Checkout", "Hotsite dedicado", "Captura + remarketing"],
     },
