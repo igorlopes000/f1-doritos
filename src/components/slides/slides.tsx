@@ -438,24 +438,25 @@ export function Slide09() {
           <div className="mt-10 text-xs font-bold uppercase tracking-[0.3em] text-primary">
             MACRO · 12 GPs · JUL → NOV
           </div>
-          <motion.div {...stagger(6)} className="mt-4 flex items-center gap-2">
+          <motion.div {...stagger(6)} className="mt-4 grid grid-cols-12 gap-2">
             {races.map((r) => {
-              const isBR = r === "BRA";
+              const isBR = r.code === "BRA";
               return (
-                <div key={r} className="flex flex-1 flex-col items-center">
+                <div key={r.code} className="flex flex-col items-center">
                   <div
-                    className={`h-16 w-full rounded ${isBR ? "bg-primary pulse-glow" : "bg-card border border-primary/30"} flex items-end justify-center pb-2`}
+                    className={`flex h-20 w-full flex-col items-center justify-center gap-1 rounded ${isBR ? "bg-primary pulse-glow" : "bg-card border border-primary/30"} px-1`}
                   >
-                    <div className="flex gap-1">
-                      <div className={`h-2 w-1 ${isBR ? "bg-background" : "bg-primary"}`} />
-                      <div className={`h-3 w-1 ${isBR ? "bg-background" : "bg-primary"}`} />
-                      <div className={`h-4 w-1 ${isBR ? "bg-background" : "bg-primary"}`} />
+                    <div className="text-2xl leading-none">{r.flag}</div>
+                    <div
+                      className={`font-mono text-[10px] font-bold ${isBR ? "text-primary-foreground" : "text-foreground"}`}
+                    >
+                      {r.code}
                     </div>
                   </div>
                   <div
-                    className={`mt-2 font-mono text-xs ${isBR ? "font-black text-primary" : "text-muted-foreground"}`}
+                    className={`mt-1 font-mono text-[9px] ${isBR ? "font-black text-primary" : "text-muted-foreground"}`}
                   >
-                    {r}
+                    {r.date}
                   </div>
                 </div>
               );
