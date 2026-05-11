@@ -558,7 +558,7 @@ export function Slide12() {
     { k: "CTR", v: "Relevância Contextual", icon: Activity },
     { k: "GMV", v: "Faturamento Total", icon: BarChart3 },
     { k: "BRAND LIFT", v: "Recall + Intenção", icon: Sparkles },
-    { k: "LEADS", v: "Audiência Engajada", icon: Target },
+    { k: "LEADS", v: "# Direcionamentos Externos", icon: Target },
   ];
   return (
     <SlideShell>
