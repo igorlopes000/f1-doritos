@@ -713,8 +713,25 @@ export function Slide15() {
     </SlideShell>
   );
 }
+
+export const SLIDES = [
+  Slide01,
+  Slide02,
+  Slide03,
+  Slide04,
+  Slide05,
+  Slide06,
+  Slide07,
+  Slide08,
+  SlideGatilhos,
+  Slide09,
+  Slide12,
+  Slide13,
+  Slide15,
+];
+
 /* ---------- 16 GATILHOS TEMPORAIS (NOVO) ---------- */
-export function Slide16() {
+export function SlideGatilhos() {
   return (
     <SlideShell bgImage={speedAbstract} overlay="linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 100%)">
       <SlideHeader index={16} total={TOTAL} label="GATILHOS TEMPORAIS" />
@@ -778,19 +795,3 @@ export function Slide16() {
     </SlideShell>
   );
 }
-
-export const SLIDES = [
-  Slide01,
-  Slide02,
-  Slide03,
-  Slide04,
-  Slide05,
-  Slide06,
-  Slide07,
-  Slide08,
-  Slide09,
-  Slide12,
-  Slide13,
-  Slide15,
-  Slide16,
-];
