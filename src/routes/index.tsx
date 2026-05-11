@@ -7,15 +7,21 @@ import { SLIDES, TOTAL } from "@/components/slides/slides";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Doritos × F1 2025 — Smart Stacking via Market4U" },
-      { name: "description", content: "Proposta de ativação Doritos × Formula 1 2025 — 27 ativações sincronizadas em 9 GPs via Market4U." },
-      { property: "og:title", content: "Doritos × F1 2025 — Smart Stacking" },
-      { property: "og:description", content: "Proposta 1: Ativação Ano Completo. 27 ativações em 9 corridas." },
+      { title: "Doritos × F1 2026 — Smart Stacking via Market4U" },
+      {
+        name: "description",
+        content: "Proposta de ativação Doritos × Formula 1 2025 — 27 ativações sincronizadas em 9 GPs via Market4U.",
+      },
+      { property: "og:title", content: "Doritos × F1 2026 — Smart Stacking" },
+      { property: "og:description", content: "Proposta 1: Ativação Ano Completo. 36 ativaçõees em 12 corridas." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&display=swap",
+      },
     ],
   }),
   component: Deck,
@@ -25,10 +31,13 @@ function Deck() {
   const [i, setI] = useState(0);
   const [dir, setDir] = useState(1);
 
-  const go = useCallback((next: number) => {
-    setDir(next > i ? 1 : -1);
-    setI(Math.max(0, Math.min(TOTAL - 1, next)));
-  }, [i]);
+  const go = useCallback(
+    (next: number) => {
+      setDir(next > i ? 1 : -1);
+      setI(Math.max(0, Math.min(TOTAL - 1, next)));
+    },
+    [i],
+  );
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -63,7 +72,10 @@ function Deck() {
       {/* Progress */}
       <div className="pointer-events-none absolute top-0 left-0 right-0 z-50 flex h-1 gap-1 px-2 pt-2">
         {Array.from({ length: TOTAL }).map((_, k) => (
-          <div key={k} className={`h-0.5 flex-1 rounded-full transition-all ${k <= i ? "bg-primary" : "bg-white/15"}`} />
+          <div
+            key={k}
+            className={`h-0.5 flex-1 rounded-full transition-all ${k <= i ? "bg-primary" : "bg-white/15"}`}
+          />
         ))}
       </div>
 
