@@ -774,7 +774,7 @@ export function SlideGatilhos() {
               <Zap size={20} />
               <span className="font-mono text-xs font-bold">T0</span>
             </div>
-            <div className="mt-4 font-display text-2xl font-black text-primary">Sinal verde...</div>
+            <div className="mt-4 font-display text-2xl font-black text-primary">Sinal verde!</div>
             <p className="mt-3 text-base font-light text-foreground/90">
               "Sinal verde. Começou. Pise fundo. Doritos, velocidade em cada bite."
             </p>
