@@ -387,9 +387,9 @@ export function Slide08() {
 /* ---------- 09 ARQUITETURA OPERACIONAL ---------- */
 export function Slide09() {
   const sessions = [
-    { k: "PREPARAÇÃO", t: "Dia do Evento", c: "Banner Home / E-MKT (1x GP)" },
-    { k: "TENSÃO", t: "T-120m", c: "Banner / Pop-Up" },
-    { k: "LIVE", t: "Sinal Verde · T0", c: "Push / Banner/ Pop-Up" },
+    { k: "HOJE TEM...", t: "Dia do Evento", c: "Banner Home / E-MKT (1x GP)" },
+    { k: "JÁ VAI COMEÇAR...", t: "T-120m", c: "Banner / Pop-Up" },
+    { k: "SINAL VERDE!", t: "Sinal Verde · T0", c: "Push / Banner/ Pop-Up" },
   ];
   const races = [
     { code: "HUN", flag: "🇭🇺", date: "24-26 JUL" },
