@@ -713,23 +713,6 @@ export function Slide15() {
     </SlideShell>
   );
 }
-
-export const SLIDES = [
-  Slide01,
-  Slide02,
-  Slide03,
-  Slide04,
-  Slide05,
-  Slide06,
-  Slide07,
-  Slide08,
-  SlideGatilhos,
-  Slide09,
-  Slide12,
-  Slide13,
-  Slide15,
-];
-
 /* ---------- 16 GATILHOS TEMPORAIS (NOVO) ---------- */
 export function SlideGatilhos() {
   return (
@@ -795,3 +778,20 @@ export function SlideGatilhos() {
     </SlideShell>
   );
 }
+
+export const SLIDES = [
+  Slide01,
+  Slide02,
+  Slide03,
+  Slide04,
+  Slide05,
+  Slide06,
+  Slide07,
+  Slide08,
+  SlideGatilhos,
+  Slide09,
+  Slide12,
+  Slide13,
+  Slide15,
+  Slide16,
+];
