@@ -568,7 +568,7 @@ export function Slide12() {
           Mensuração de Resultados
         </motion.h2>
         <motion.p {...stagger(1)} className="mt-3 max-w-2xl text-base text-muted-foreground">
-          Indicadores de Sucesso
+          Camadas de validação: grupo tratado vs. grupo controle.
         </motion.p>
 
         <div className="mt-12 grid flex-1 grid-cols-4 gap-6">
