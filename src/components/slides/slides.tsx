@@ -714,7 +714,7 @@ export function Slide15() {
   );
 }
 /* ---------- 16 GATILHOS TEMPORAIS (NOVO) ---------- */
-export function SlideGatilhos() {
+export function Slide16() {
   return (
     <SlideShell bgImage={speedAbstract} overlay="linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 100%)">
       <SlideHeader index={16} total={TOTAL} label="GATILHOS TEMPORAIS" />
@@ -788,7 +788,6 @@ export const SLIDES = [
   Slide06,
   Slide07,
   Slide08,
-  SlideGatilhos,
   Slide09,
   Slide12,
   Slide13,
