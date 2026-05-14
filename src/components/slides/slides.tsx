@@ -728,7 +728,6 @@ export const SLIDES = [
   Slide12,
   Slide13,
   Slide15,
-  Slide17,
 ];
 
 /* ---------- 16 GATILHOS TEMPORAIS (NOVO) ---------- */
