@@ -31,7 +31,7 @@ const stagger = (i: number) => ({
   transition: { duration: 0.7, delay: 0.15 + i * 0.12, ease: [0.22, 1, 0.36, 1] as const },
 });
 
-export const TOTAL = 14;
+export const TOTAL = 15;
 
 /* ---------- 01 CAPA ---------- */
 export function Slide01() {
@@ -727,11 +727,106 @@ export const SLIDES = [
   Slide08,
   SlideGatilhos,
   Slide09,
+  SlideGPBrasil,
   Slide12,
   SlideCaseCarnaval,
   Slide13,
   Slide15,
 ];
+
+/* ---------- GP BRASIL · DENSIDADE MÁXIMA ---------- */
+export function SlideGPBrasil() {
+  const bands = [
+    {
+      label: "PREPARANDO OS PILOTOS",
+      meta: "2 SEMANAS ANTES",
+      tag: "VERMELHO · TENSÃO",
+      desc: "Banners / Pop-Up / E-MKT",
+      gradient: "linear-gradient(90deg, hsl(0 85% 45%) 0%, hsl(0 70% 22%) 100%)",
+      border: "border-red-500/60",
+      text: "text-red-200",
+    },
+    {
+      label: "AQUECENDO OS MOTORES",
+      meta: "1 SEMANA ANTES",
+      tag: "AMARELO · COMPRESSÃO",
+      desc: "Banners / Pop-Up / E-MKT",
+      gradient: "linear-gradient(90deg, hsl(48 95% 50%) 0%, hsl(38 80% 25%) 100%)",
+      border: "border-yellow-500/60",
+      text: "text-yellow-100",
+    },
+    {
+      label: "FOI DADA A LARGADA",
+      meta: "SEMANA DO GP · SEG A QUI",
+      tag: "VERDE · PICO",
+      desc: "Banners / Pop-Up / E-MKT",
+      gradient: "linear-gradient(90deg, hsl(140 70% 40%) 0%, hsl(140 60% 18%) 100%)",
+      border: "border-green-500/60",
+      text: "text-green-100",
+    },
+  ];
+  return (
+    <SlideShell>
+      <SlideHeader index={10} total={TOTAL} label="DENSIDADE MÁXIMA · GP BRASIL" />
+      <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-16">
+        <motion.div {...stagger(0)} className="flex items-center gap-3 text-primary">
+          <Flag size={20} />
+          <span className="text-xs font-bold uppercase tracking-[0.4em]">DENSIDADE MÁXIMA · GP BRASIL</span>
+        </motion.div>
+        <motion.h2 {...stagger(1)} className="mt-4 font-display text-6xl font-black leading-[0.95]">
+          Densidade Concentrada: <span className="text-primary text-glow">GP Brasil</span>
+        </motion.h2>
+        <motion.p {...stagger(2)} className="mt-3 text-base text-muted-foreground">
+          22 Dias <span className="text-border">|</span> Variação Semanal de Criativos
+        </motion.p>
+
+        <div className="mt-10 flex flex-col gap-4">
+          {bands.map((b, i) => (
+            <motion.div
+              key={b.label}
+              {...stagger(i + 3)}
+              className={`relative flex items-center justify-between overflow-hidden rounded-md border ${b.border} px-6 py-5`}
+              style={{ background: b.gradient }}
+            >
+              <div className="flex items-baseline gap-5">
+                <span className="font-display text-xl font-black uppercase tracking-wider text-white">
+                  {b.label}
+                </span>
+                <span className={`text-xs uppercase tracking-[0.3em] ${b.text}`}>{b.meta}</span>
+              </div>
+              <span className={`text-xs uppercase tracking-[0.3em] ${b.text}`}>{b.tag}</span>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div {...stagger(6)} className="mt-8 flex items-center gap-3 text-primary">
+          <Radio size={16} />
+          <span className="text-xs font-bold uppercase tracking-[0.4em]">DESCRIÇÃO · CANAIS POR FASE</span>
+        </motion.div>
+
+        <div className="mt-4 grid flex-1 grid-cols-3 gap-5">
+          {bands.map((b, i) => (
+            <motion.div
+              key={`desc-${b.label}`}
+              {...stagger(i + 7)}
+              className={`flex flex-col justify-between rounded-lg border ${b.border} bg-card/40 p-5 backdrop-blur-sm`}
+            >
+              <div>
+                <div className={`text-xs font-bold uppercase tracking-[0.3em] ${b.text}`}>{b.tag.split(" · ")[0]}</div>
+                <div className="mt-2 font-display text-lg font-black uppercase leading-tight text-white">
+                  {b.label}
+                </div>
+              </div>
+              <div className="mt-4 border-t border-border/40 pt-3 text-sm text-foreground/85">
+                {b.desc}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </SlideShell>
+  );
+}
 
 /* ---------- CASE CARNAVAL ---------- */
 export function SlideCaseCarnaval() {
