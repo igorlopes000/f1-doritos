@@ -773,23 +773,23 @@ export function SlideGPBrasil() {
           <Flag size={20} />
           <span className="text-xs font-bold uppercase tracking-[0.4em]">DENSIDADE MÁXIMA · GP BRASIL</span>
         </motion.div>
-        <motion.h2 {...stagger(1)} className="mt-4 font-display text-6xl font-black leading-[0.95]">
+        <motion.h2 {...stagger(1)} className="mt-3 font-display text-5xl font-black leading-[0.95]">
           Densidade Concentrada: <span className="text-primary text-glow">GP Brasil</span>
         </motion.h2>
-        <motion.p {...stagger(2)} className="mt-3 text-base text-muted-foreground">
+        <motion.p {...stagger(2)} className="mt-2 text-sm text-muted-foreground">
           22 Dias <span className="text-border">|</span> Variação Semanal de Criativos
         </motion.p>
 
-        <div className="mt-10 flex flex-col gap-4">
+        <div className="mt-6 flex flex-col gap-3">
           {bands.map((b, i) => (
             <motion.div
               key={b.label}
               {...stagger(i + 3)}
-              className={`relative flex items-center justify-between overflow-hidden rounded-md border ${b.border} px-6 py-5`}
+              className={`relative flex items-center justify-between overflow-hidden rounded-md border ${b.border} px-6 py-4`}
               style={{ background: b.gradient }}
             >
               <div className="flex items-baseline gap-5">
-                <span className="font-display text-xl font-black uppercase tracking-wider text-white">
+                <span className="font-display text-lg font-black uppercase tracking-wider text-white">
                   {b.label}
                 </span>
                 <span className={`text-xs uppercase tracking-[0.3em] ${b.text}`}>{b.meta}</span>
@@ -799,25 +799,25 @@ export function SlideGPBrasil() {
           ))}
         </div>
 
-        <motion.div {...stagger(6)} className="mt-8 flex items-center gap-3 text-primary">
+        <motion.div {...stagger(6)} className="mt-6 flex items-center gap-3 text-primary">
           <Radio size={16} />
           <span className="text-xs font-bold uppercase tracking-[0.4em]">DESCRIÇÃO · CANAIS POR FASE</span>
         </motion.div>
 
-        <div className="mt-4 grid flex-1 grid-cols-3 gap-5">
+        <div className="mt-3 grid flex-1 grid-cols-3 gap-4">
           {bands.map((b, i) => (
             <motion.div
               key={`desc-${b.label}`}
               {...stagger(i + 7)}
-              className={`flex flex-col justify-between rounded-lg border ${b.border} bg-card/40 p-5 backdrop-blur-sm`}
+              className={`flex flex-col justify-between rounded-lg border ${b.border} bg-card/40 p-4 backdrop-blur-sm`}
             >
               <div>
                 <div className={`text-xs font-bold uppercase tracking-[0.3em] ${b.text}`}>{b.tag.split(" · ")[0]}</div>
-                <div className="mt-2 font-display text-lg font-black uppercase leading-tight text-white">
+                <div className="mt-2 font-display text-base font-black uppercase leading-tight text-white">
                   {b.label}
                 </div>
               </div>
-              <div className="mt-4 border-t border-border/40 pt-3 text-sm text-foreground/85">
+              <div className="mt-3 border-t border-border/40 pt-3 text-sm text-foreground/85">
                 {b.desc}
               </div>
             </motion.div>
