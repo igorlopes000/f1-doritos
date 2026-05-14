@@ -609,20 +609,22 @@ export function Slide13() {
       tag: "MANDATÓRIO",
       title: "CORE",
       price: "R$ 170k",
-      items: ["36 ativações (12×3)", "Banner, Push, Pop-up", "Métricas base"],
+      items: [
+        "E-MKT · 10% (R$ 17k) — 12 disparos/redação",
+        "Banner · 35% (R$ 59,5k) — 108 criativos (3 momentos × 3 dias × 12 GPs)",
+        "Pop-up · 55% (R$ 93,5k) — 72 criativos (2 momentos × 3 dias × 12 GPs)",
+      ],
       featured: true,
     },
     {
       tag: "OPCIONAL",
-      title: "Módulo 1       · GP Brasil",
-      price: "+ R$ 50k",
-      items: ["Expansão para 6 mídias", "Densidade máxima", "Intensificação GP Brasil"],
-    },
-    {
-      tag: "OPCIONAL",
-      title: "Módulo 2       · Telas + Checkout",
-      price: "+ R$ 30k",
-      items: ["Telas + Checkout", "Hotsite dedicado", "Captura + remarketing"],
+      title: "GP Brasil · Intensidade Máxima",
+      price: "+ R$ 80k",
+      items: [
+        "Expansão para 6 mídias",
+        "Densidade máxima de ativações",
+        "Intensificação dedicada ao GP do Brasil",
+      ],
     },
   ];
   return (
