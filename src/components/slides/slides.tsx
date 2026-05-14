@@ -623,9 +623,9 @@ export function Slide13() {
       title: "GP Brasil · Intensidade Máxima",
       price: "+ R$ 80k",
       items: [
-        "E-MKT · R$ 8k — 3 Disparos
-        "Banner · R$ 28k — 3 Criativos - 19 Dias",
-        "Pop-up · R$ 44k — 3 Criativos - 19 Dias",
+        "E-MKT · R$ 8k — 3 Disparos",
+        "Banner · R$ 28k — 3 Criativos  (19 Dias)",
+        "Pop-up · R$ 44k — 3 Criativos - (19 Dias)",
       ],
     },
   ];
@@ -779,7 +779,7 @@ export function SlideGPBrasil() {
           Densidade Concentrada: <span className="text-primary text-glow">GP Brasil</span>
         </motion.h2>
         <motion.p {...stagger(2)} className="mt-2 text-sm text-muted-foreground">
-          22 Dias <span className="text-border">|</span> Variação Semanal de Criativos
+          19 Dias <span className="text-border">|</span> Variação Semanal de Criativos
         </motion.p>
 
         <div className="mt-6 flex flex-col gap-3">
