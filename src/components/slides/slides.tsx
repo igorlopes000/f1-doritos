@@ -595,7 +595,9 @@ export function Slide12() {
           className="mt-10 flex items-center gap-4 rounded border-l-2 border-primary bg-card/40 p-5"
         >
           <Gauge className="text-primary" size={28} />
-          <div className="text-sm text-foreground/80">Leitura contínua de performance ao longo dos 12 GPs — vereditos por corrida e consolidado de temporada.</div>
+          <div className="text-sm text-foreground/80">
+            Leitura contínua de performance ao longo dos 12 GPs — vereditos por corrida e consolidado de temporada.
+          </div>
         </motion.div>
       </div>
     </SlideShell>
@@ -620,11 +622,7 @@ export function Slide13() {
       tag: "OPCIONAL",
       title: "GP Brasil · Intensidade Máxima",
       price: "+ R$ 80k",
-      items: [
-        "Expansão para 6 mídias",
-        "Densidade máxima de ativações",
-        "Intensificação dedicada ao GP do Brasil",
-      ],
+      items: ["Expansão para 6 mídias", "Densidade máxima de ativações", "Intensificação dedicada ao GP do Brasil"],
     },
   ];
   return (
@@ -725,11 +723,11 @@ export const SLIDES = [
   Slide06,
   Slide07,
   Slide08,
+  SlideCaseCarnaval,
   SlideGatilhos,
   Slide09,
   SlideGPBrasil,
   Slide12,
-  SlideCaseCarnaval,
   Slide13,
   Slide15,
 ];
@@ -789,9 +787,7 @@ export function SlideGPBrasil() {
               style={{ background: b.gradient }}
             >
               <div className="flex items-baseline gap-5">
-                <span className="font-display text-lg font-black uppercase tracking-wider text-white">
-                  {b.label}
-                </span>
+                <span className="font-display text-lg font-black uppercase tracking-wider text-white">{b.label}</span>
                 <span className={`text-xs uppercase tracking-[0.3em] ${b.text}`}>{b.meta}</span>
               </div>
               <span className={`text-xs uppercase tracking-[0.3em] ${b.text}`}>{b.tag}</span>
@@ -817,9 +813,7 @@ export function SlideGPBrasil() {
                   {b.label}
                 </div>
               </div>
-              <div className="mt-3 border-t border-border/40 pt-3 text-sm text-foreground/85">
-                {b.desc}
-              </div>
+              <div className="mt-3 border-t border-border/40 pt-3 text-sm text-foreground/85">{b.desc}</div>
             </motion.div>
           ))}
         </div>
@@ -848,7 +842,8 @@ export function SlideCaseCarnaval() {
           Case Smart Stacking <span className="text-primary text-glow">Carnaval</span>
         </motion.h2>
         <motion.p {...stagger(2)} className="mt-3 text-base text-muted-foreground">
-          Categoria: Cervejas <span className="text-border">|</span> Carnaval de São Paulo <span className="text-border">|</span> 16 dias
+          Categoria: Cervejas <span className="text-border">|</span> Carnaval de São Paulo{" "}
+          <span className="text-border">|</span> 16 dias
         </motion.p>
 
         <div className="mt-10 grid grid-cols-4 gap-5">
