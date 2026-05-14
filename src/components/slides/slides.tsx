@@ -769,7 +769,7 @@ export function SlideGPBrasil() {
   ];
   return (
     <SlideShell>
-      <SlideHeader index={12} total={TOTAL} label="DENSIDADE MÁXIMA · GP BRASIL" />
+      <SlideHeader index={12} total={TOTAL} label="INTENSIDADE MÁXIMA · GP BRASIL" />
       <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-16">
         <motion.div {...stagger(0)} className="flex items-center gap-3 text-primary">
           <Flag size={20} />
