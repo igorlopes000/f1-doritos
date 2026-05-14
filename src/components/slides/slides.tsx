@@ -407,7 +407,7 @@ export function Slide09() {
   ];
   return (
     <SlideShell>
-      <SlideHeader index={9} total={TOTAL} label="ARQUITETURA OPERACIONAL" />
+      <SlideHeader index={11} total={TOTAL} label="ARQUITETURA OPERACIONAL" />
       <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-12">
         <motion.h2 {...stagger(0)} className="font-display text-4xl font-black">
           Ciclo de Ativação Sincronizada
@@ -484,7 +484,7 @@ export function Slide10() {
     );
   return (
     <SlideShell>
-      <SlideHeader index={10} total={TOTAL} label="DIFERENCIAL" />
+      <SlideHeader index={11} total={TOTAL} label="DIFERENCIAL" />
       <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-12">
         <motion.div {...stagger(0)} className="flex items-baseline justify-between">
           <h2 className="font-display text-4xl font-black">Imune à Replicação</h2>
@@ -562,7 +562,7 @@ export function Slide12() {
   ];
   return (
     <SlideShell>
-      <SlideHeader index={12} total={TOTAL} label="MENSURAÇÃO" />
+      <SlideHeader index={13} total={TOTAL} label="MENSURAÇÃO" />
       <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-16">
         <motion.h2 {...stagger(0)} className="font-display text-4xl font-black">
           Mensuração de Resultados
@@ -627,7 +627,7 @@ export function Slide13() {
   ];
   return (
     <SlideShell>
-      <SlideHeader index={13} total={TOTAL} label="INVESTIMENTO" />
+      <SlideHeader index={14} total={TOTAL} label="INVESTIMENTO" />
       <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-16">
         <motion.h2 {...stagger(0)} className="font-display text-4xl font-black">
           Estrutura de Investimento
@@ -765,7 +765,7 @@ export function SlideGPBrasil() {
   ];
   return (
     <SlideShell>
-      <SlideHeader index={10} total={TOTAL} label="DENSIDADE MÁXIMA · GP BRASIL" />
+      <SlideHeader index={12} total={TOTAL} label="DENSIDADE MÁXIMA · GP BRASIL" />
       <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-16">
         <motion.div {...stagger(0)} className="flex items-center gap-3 text-primary">
           <Flag size={20} />
@@ -832,7 +832,7 @@ export function SlideCaseCarnaval() {
   ];
   return (
     <SlideShell>
-      <SlideHeader index={13} total={TOTAL} label="CASE CARNAVAL" />
+      <SlideHeader index={9} total={TOTAL} label="CASE CARNAVAL" />
       <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-16">
         <motion.div {...stagger(0)} className="flex items-center gap-3 text-primary">
           <Sparkles size={20} />
@@ -898,7 +898,7 @@ export function SlideCaseCarnaval() {
 export function SlideGatilhos() {
   return (
     <SlideShell bgImage={speedAbstract} overlay="linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 100%)">
-      <SlideHeader index={16} total={TOTAL} label="GATILHOS TEMPORAIS" />
+      <SlideHeader index={10} total={TOTAL} label="GATILHOS TEMPORAIS" />
       <div className="flex h-[calc(100%-7rem)] flex-col justify-center px-16 pb-16">
         <motion.span {...stagger(0)} className="text-xs font-bold uppercase tracking-[0.4em] text-primary">
           ATIVAÇÃO SINCRONIZADA · MARKET4U
