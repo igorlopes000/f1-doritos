@@ -557,8 +557,8 @@ export function Slide12() {
   const metrics = [
     { k: "CTR", v: "Relevância Contextual", icon: Activity },
     { k: "GMV", v: "Faturamento Total", icon: BarChart3 },
-    { k: "BRAND LIFT", v: "Pesquisa Periódica", icon: Sparkles },
-    { k: "LEADS", v: "# Direcionamentos Externos", icon: Target },
+    { k: "MARKET SHARE", v: "Participação na Categoria", icon: Trophy },
+    { k: "USUÁRIOS ÚNICOS", v: "Alcance Real de Compradores", icon: Target },
   ];
   return (
     <SlideShell>
@@ -595,7 +595,7 @@ export function Slide12() {
           className="mt-10 flex items-center gap-4 rounded border-l-2 border-primary bg-card/40 p-5"
         >
           <Gauge className="text-primary" size={28} />
-          <div className="text-sm text-foreground/80"> Leads a partir de Telas e Banner Checkout</div>
+          <div className="text-sm text-foreground/80">Leitura contínua de performance ao longo dos 12 GPs — vereditos por corrida e consolidado de temporada.</div>
         </motion.div>
       </div>
     </SlideShell>
@@ -609,20 +609,22 @@ export function Slide13() {
       tag: "MANDATÓRIO",
       title: "CORE",
       price: "R$ 170k",
-      items: ["36 ativações (12×3)", "Banner, Push, Pop-up", "Métricas base"],
+      items: [
+        "E-MKT · 10% (R$ 17k) — 12 disparos/redação",
+        "Banner · 35% (R$ 59,5k) — 108 criativos (3 momentos × 3 dias × 12 GPs)",
+        "Pop-up · 55% (R$ 93,5k) — 72 criativos (2 momentos × 3 dias × 12 GPs)",
+      ],
       featured: true,
     },
     {
       tag: "OPCIONAL",
-      title: "Módulo 1       · GP Brasil",
-      price: "+ R$ 50k",
-      items: ["Expansão para 6 mídias", "Densidade máxima", "Intensificação GP Brasil"],
-    },
-    {
-      tag: "OPCIONAL",
-      title: "Módulo 2       · Telas + Checkout",
-      price: "+ R$ 30k",
-      items: ["Telas + Checkout", "Hotsite dedicado", "Captura + remarketing"],
+      title: "GP Brasil · Intensidade Máxima",
+      price: "+ R$ 80k",
+      items: [
+        "Expansão para 6 mídias",
+        "Densidade máxima de ativações",
+        "Intensificação dedicada ao GP do Brasil",
+      ],
     },
   ];
   return (
@@ -632,7 +634,7 @@ export function Slide13() {
         <motion.h2 {...stagger(0)} className="font-display text-4xl font-black">
           Estrutura de Investimento
         </motion.h2>
-        <div className="mt-12 grid flex-1 grid-cols-3 gap-6">
+        <div className="mt-12 grid flex-1 grid-cols-2 gap-6">
           {cards.map((c, i) => (
             <motion.div
               key={c.title}
