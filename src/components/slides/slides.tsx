@@ -31,7 +31,7 @@ const stagger = (i: number) => ({
   transition: { duration: 0.7, delay: 0.15 + i * 0.12, ease: [0.22, 1, 0.36, 1] as const },
 });
 
-export const TOTAL = 13;
+export const TOTAL = 14;
 
 /* ---------- 01 CAPA ---------- */
 export function Slide01() {
@@ -728,9 +728,81 @@ export const SLIDES = [
   SlideGatilhos,
   Slide09,
   Slide12,
+  SlideCaseCarnaval,
   Slide13,
   Slide15,
 ];
+
+/* ---------- CASE CARNAVAL ---------- */
+export function SlideCaseCarnaval() {
+  const metrics = [
+    { v: "+0,7 p.p.", k: "Market Share x Q4", icon: Trophy },
+    { v: "+31,2%", k: "Transações Diárias x Q4", icon: BarChart3 },
+    { v: "+31,9%", k: "Usuários Distintos Diários x Q4", icon: Target },
+    { v: "3,65%", k: "CTR", icon: Activity },
+  ];
+  return (
+    <SlideShell>
+      <SlideHeader index={13} total={TOTAL} label="CASE CARNAVAL" />
+      <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-16">
+        <motion.div {...stagger(0)} className="flex items-center gap-3 text-primary">
+          <Sparkles size={20} />
+          <span className="text-xs font-bold uppercase tracking-[0.4em]">CASE DE SMART STACKING · CARNAVAL</span>
+        </motion.div>
+        <motion.h2 {...stagger(1)} className="mt-4 font-display text-5xl font-black leading-[0.95]">
+          Case Smart Stacking <span className="text-primary text-glow">Carnaval</span>
+        </motion.h2>
+        <motion.p {...stagger(2)} className="mt-3 text-base text-muted-foreground">
+          Categoria: Cervejas <span className="text-border">|</span> Carnaval de São Paulo <span className="text-border">|</span> 16 dias
+        </motion.p>
+
+        <div className="mt-10 grid grid-cols-4 gap-5">
+          {metrics.map((m, i) => {
+            const Icon = m.icon;
+            return (
+              <motion.div
+                key={m.k}
+                {...stagger(i + 3)}
+                className="flex flex-col justify-between rounded-lg border border-primary/30 bg-card/40 p-6 backdrop-blur-sm"
+              >
+                <Icon className="text-primary" size={28} />
+                <div className="mt-6">
+                  <div className="font-display text-4xl font-black text-primary text-glow">{m.v}</div>
+                  <div className="mt-2 text-xs uppercase tracking-wider text-muted-foreground">{m.k}</div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        <div className="mt-8 grid flex-1 grid-cols-2 gap-5">
+          <motion.div
+            {...stagger(7)}
+            className="flex flex-col justify-center rounded-lg border-2 border-primary bg-primary/5 p-6 pulse-glow"
+          >
+            <div className="text-xs font-bold uppercase tracking-[0.3em] text-primary">Comparativo</div>
+            <div className="mt-3 font-display text-3xl font-black leading-tight">
+              Uplift GMV <span className="text-primary text-glow">+20,9 p.p.</span>
+            </div>
+            <div className="mt-2 text-sm text-foreground/80">vs. Líder da Categoria</div>
+          </motion.div>
+
+          <motion.div
+            {...stagger(8)}
+            className="flex flex-col justify-center rounded border-l-2 border-primary bg-card/40 p-6"
+          >
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-primary">
+              <Zap size={14} /> Insight
+            </div>
+            <p className="mt-3 text-sm leading-relaxed text-foreground/85">
+              Sinais quantitativos claros de mudança de comportamento de consumo. Expansão de momentos target da ação.
+            </p>
+          </motion.div>
+        </div>
+      </div>
+    </SlideShell>
+  );
+}
 
 /* ---------- 16 GATILHOS TEMPORAIS (NOVO) ---------- */
 export function SlideGatilhos() {
