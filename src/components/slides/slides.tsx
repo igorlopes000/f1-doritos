@@ -622,7 +622,12 @@ export function Slide13() {
       tag: "OPCIONAL",
       title: "GP Brasil · Intensidade Máxima",
       price: "+ R$ 80k",
-      items: ["Expansão para 6 mídias", "Densidade máxima de ativações", "Intensificação dedicada ao GP do Brasil"],
+      items: [
+        "22 dias de ativação",
+        "Domínio sobre o mês do GP Brasil",
+        "Densidade máxima de ativações",
+        "Intensificação dedicada ao GP do Brasil",
+      ],
     },
   ];
   return (
