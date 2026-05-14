@@ -773,7 +773,7 @@ export function SlideGPBrasil() {
       <div className="flex h-[calc(100%-7rem)] flex-col px-16 pb-16">
         <motion.div {...stagger(0)} className="flex items-center gap-3 text-primary">
           <Flag size={20} />
-          <span className="text-xs font-bold uppercase tracking-[0.4em]">DENSIDADE MÁXIMA · GP BRASIL</span>
+          <span className="text-xs font-bold uppercase tracking-[0.4em]">INTENSIDADE MÁXIMA · GP BRASIL</span>
         </motion.div>
         <motion.h2 {...stagger(1)} className="mt-3 font-display text-5xl font-black leading-[0.95]">
           Intensidade Máxima: <span className="text-primary text-glow">GP Brasil</span>
