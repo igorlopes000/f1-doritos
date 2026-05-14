@@ -876,7 +876,7 @@ export function SlideCaseCarnaval() {
           >
             <div className="text-xs font-bold uppercase tracking-[0.3em] text-primary">Comparativo</div>
             <div className="mt-3 font-display text-3xl font-black leading-tight">
-              Uplift GMV <span className="text-primary text-glow">+20,9 p.p.</span>
+              Uplift GMV x Q4<span className="text-primary text-glow">+20,9 p.p.</span>
             </div>
             <div className="mt-2 text-sm text-foreground/80">vs. Líder da Categoria</div>
           </motion.div>
