@@ -634,7 +634,7 @@ export function Slide13() {
         <motion.h2 {...stagger(0)} className="font-display text-4xl font-black">
           Estrutura de Investimento
         </motion.h2>
-        <div className="mt-12 grid flex-1 grid-cols-3 gap-6">
+        <div className="mt-12 grid flex-1 grid-cols-2 gap-6">
           {cards.map((c, i) => (
             <motion.div
               key={c.title}
