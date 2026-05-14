@@ -736,7 +736,7 @@ export const SLIDES = [
   Slide15,
 ];
 
-/* ---------- GP BRASIL · DENSIDADE MÁXIMA ---------- */
+/* ---------- GP BRASIL · INTENSIDADE MÁXIMA ---------- */
 export function SlideGPBrasil() {
   const bands = [
     {
@@ -776,7 +776,7 @@ export function SlideGPBrasil() {
           <span className="text-xs font-bold uppercase tracking-[0.4em]">DENSIDADE MÁXIMA · GP BRASIL</span>
         </motion.div>
         <motion.h2 {...stagger(1)} className="mt-3 font-display text-5xl font-black leading-[0.95]">
-          Densidade Concentrada: <span className="text-primary text-glow">GP Brasil</span>
+          Intensidade Máxima: <span className="text-primary text-glow">GP Brasil</span>
         </motion.h2>
         <motion.p {...stagger(2)} className="mt-2 text-sm text-muted-foreground">
           19 Dias <span className="text-border">|</span> Variação Semanal de Criativos
