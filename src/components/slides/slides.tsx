@@ -760,7 +760,7 @@ export function SlideGPBrasil() {
     {
       label: "FOI DADA A LARGADA",
       meta: "SEMANA DO GP · SEG A QUI",
-      tag: "VERDE · PICO",
+      tag: "VERDE · LIVE",
       desc: "Banners / Pop-Up / E-MKT",
       gradient: "linear-gradient(90deg, hsl(140 70% 40%) 0%, hsl(140 60% 18%) 100%)",
       border: "border-green-500/60",
