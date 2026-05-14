@@ -612,9 +612,9 @@ export function Slide13() {
       title: "CORE",
       price: "R$ 170k",
       items: [
-        "E-MKT · 10% (R$ 17k) — 12 disparos/redação",
-        "Banner · 35% (R$ 59,5k) — 108 criativos (3 momentos × 3 dias × 12 GPs)",
-        "Pop-up · 55% (R$ 93,5k) — 72 criativos (2 momentos × 3 dias × 12 GPs)",
+        "E-MKT · R$ 17k — 12 disparos/redação",
+        "Banner · R$ 59,5k — 108 criativos (3 momentos × 3 dias × 12 GPs)",
+        "Pop-up · R$ 93,5k — 72 criativos (2 momentos × 3 dias × 12 GPs)",
       ],
       featured: true,
     },
@@ -627,6 +627,9 @@ export function Slide13() {
         "Domínio sobre o mês do GP Brasil",
         "Densidade máxima de ativações",
         "Intensificação dedicada ao GP do Brasil",
+        <br />"E-MKT · R$ 8k — 12 disparos/redação",
+        "Banner · R$ 28k — 108 criativos (3 momentos × 3 dias × 12 GPs)",
+        "Pop-up · R$ 44k — 72 criativos (2 momentos × 3 dias × 12 GPs)",
       ],
     },
   ];
