@@ -623,12 +623,9 @@ export function Slide13() {
       title: "GP Brasil · Intensidade Máxima",
       price: "+ R$ 80k",
       items: [
-        "22 dias de ativação",
-        "Domínio da Categoria no mês do GP Brasil",
-        "Intensificação dedicada ao GP do Brasil",
         "E-MKT · R$ 8k — 3 Disparos
-        "Banner · R$ 28k — 3 Criativos",
-        "Pop-up · R$ 44k — 3 Criativos",
+        "Banner · R$ 28k — 3 Criativos - 19 Dias",
+        "Pop-up · R$ 44k — 3 Criativos - 19 Dias",
       ],
     },
   ];
