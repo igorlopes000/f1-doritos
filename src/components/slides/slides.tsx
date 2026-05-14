@@ -823,31 +823,6 @@ export function SlideGPBrasil() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div {...stagger(6)} className="mt-8 flex items-center gap-3 text-primary">
-          <Radio size={16} />
-          <span className="text-xs font-bold uppercase tracking-[0.4em]">DESCRIÇÃO · CANAIS POR FASE</span>
-        </motion.div>
-
-        <div className="mt-4 grid flex-1 grid-cols-3 gap-5">
-          {bands.map((b, i) => (
-            <motion.div
-              key={`desc-${b.label}`}
-              {...stagger(i + 7)}
-              className={`flex flex-col justify-between rounded-lg border ${b.border} bg-card/40 p-5 backdrop-blur-sm`}
-            >
-              <div>
-                <div className={`text-xs font-bold uppercase tracking-[0.3em] ${b.text}`}>{b.tag.split(" · ")[0]}</div>
-                <div className="mt-2 font-display text-lg font-black uppercase leading-tight text-white">
-                  {b.label}
-                </div>
-              </div>
-              <div className="mt-4 border-t border-border/40 pt-3 text-sm text-foreground/85">
-                {b.desc}
-              </div>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </SlideShell>
   );
