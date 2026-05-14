@@ -557,8 +557,8 @@ export function Slide12() {
   const metrics = [
     { k: "CTR", v: "Relevância Contextual", icon: Activity },
     { k: "GMV", v: "Faturamento Total", icon: BarChart3 },
-    { k: "BRAND LIFT", v: "Pesquisa Periódica", icon: Sparkles },
-    { k: "LEADS", v: "# Direcionamentos Externos", icon: Target },
+    { k: "MARKET SHARE", v: "Participação na Categoria", icon: Trophy },
+    { k: "USUÁRIOS ÚNICOS", v: "Alcance Real de Compradores", icon: Target },
   ];
   return (
     <SlideShell>
